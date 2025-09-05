@@ -1,0 +1,7 @@
+{
+  "name": "Product Spec Sheet Creator",
+  "description": "A simple and fast data entry application to create product specification sheets, similar to an Excel template. Easily add items, descriptions, prices, and images.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
