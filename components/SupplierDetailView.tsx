@@ -3,6 +3,7 @@ import type { Supplier } from '../types';
 import { Header } from './Header';
 import { ItemList } from './ItemList';
 import { Modal } from './Modal';
+import * as ExcelJS from 'exceljs';
 
 interface SupplierDetailViewProps {
   supplier: Supplier;
@@ -17,9 +18,6 @@ interface SupplierDetailViewProps {
   onRemoveSupplier: (supplierId: string) => void;
   onBack: () => void;
 }
-
-// Declare ExcelJS to be available on the window object
-declare const ExcelJS: any;
 
 export const SupplierDetailView: React.FC<SupplierDetailViewProps> = ({
   supplier,
